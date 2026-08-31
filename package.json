@@ -19,7 +19,7 @@
     "demo:agent": "npm run demo --workspace @query402/agent-client",
     "validate:real": "npm run validate:real --workspace @query402/agent-client",
     "preview:web": "npm run preview --workspace @query402/web",
-    "build": "npm run build --workspaces",
+    "build": "node api.js && npm run build --workspaces",
     "typecheck": "npm run typecheck --workspaces",
     "test": "npm run test --workspace @query402/shared && npm run test --workspace @query402/api && npm run test --workspace @query402/agent-client && npm run test --workspace @query402/web",
     "test:coverage": "npm run test:coverage --workspace @query402/api",
